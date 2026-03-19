@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokyo Ramen House - Authentic Japanese Ramen</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Shippori+Mincho:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="nav-logo-en">Tokyo Ramen House</span>
+                <span class="nav-logo-jp">東京ラーメンハウス</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#location">Lokasi</a></li>
+            </ul>
+            <a href="#location" class="btn btn-primary nav-cta">Reservasi</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#hero" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">Tentang Kami</a></li>
+            <li><a href="#menu" class="mobile-link">Menu</a></li>
+            <li><a href="#gallery" class="mobile-link">Galeri</a></li>
+            <li><a href="#testimonials" class="mobile-link">Testimoni</a></li>
+            <li><a href="#location" class="mobile-link">Lokasi</a></li>
+        </ul>
+        <a href="#location" class="btn btn-primary mobile-cta mobile-link">Reservasi Meja</a>
+    </div>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-accent"></div>
+        <div class="hero-jp-text">ラーメン</div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Authentic Japanese Ramen - Since 2018</div>
+                <h1 class="hero-title">
+                    Ramen Jepang <br>
+                    <em>Autentik</em> - Hangat, <br>
+                    Gurih, dan Menggoda
+                </h1>
+                <p class="hero-sub">
+                    Kuah kaldu direbus selama 20 jam, mie ramen handmade segar setiap hari,
+                    dan bahan-bahan pilihan terbaik langsung dari Jepang - semua dalam satu mangkok sempurna.
+                </p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">
+                        <span>🍜</span> Lihat Menu
+                    </a>
+                    <a href="#location" class="btn btn-outline">Reservasi Meja</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="section-label">Tentang Kami</p>
+                    <h2 class="section-title">Warisan Ramen dari <br> Jantung Tokyo</h2>
+                    <div class="divider"></div>
+                        <p>Tokyo Ramen House lahir dari kecintaan mendalam terhadap ramen autentik Jepang. Chef kami belajar langsung di Tokyo, membawa teknik dan resep tradisional yang telah diwariskan turun-temurun</p>
+                        <p>Setiap mangkok yang kami sajikan adalah hasil dari dedikasi tanpa henti - kuah tonkotsu yang direbus selama 20 jam, mie ramen yang dibuat dengan tangan setiap pagi, dan toping segar yang dipilih secara cermat</p>
+                        <p>Kami percaya bahwa ramen yang baik adalah tentang keseimbangan: rasa yang dalam namun tidak berat, mie yang kenyal namun lembut, dan pengalaman makan yang terasa seperti pelukan hangat di hari hujan</p>
+                    <div class="about-stats">
+                        <div>
+                            <div class="stat-num">20+</div>
+                            <div class="stat-label">Jam memasak kaldu</div>
+                        </div>
+                        <div>
+                            <div class="stat-num">6+</div>
+                            <div class="stat-label">Varian ramen pilihan</div>
+                        </div>
+                        <div>
+                            <div class="stat-num">5.0★</div>
+                            <div class="stat-label">Rating Pelanggan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img-wrap reveal reveal-delay-2">
+                    <div class="about-img-main">
+                        <img src="images/ramen.jpg" style="width: 490px;" alt="ramen">
+                    </div>
+                    <div class="about-img-badge">
+                        <span class="badge-year">2018</span>
+                        <span class="badge-text">Berdiri sejak</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <div class="container">
+            <div class="menu-header reveal">
+                <p class="section-label">Menu Kami</p>
+                <h2 class="section-title" style="color: white; font-size: clamp(1.8rem, 3vw, 2.6rem);">Pilihan Ramen Terbaik</h2>
+                <div class="divider"></div>
+            </div> 
+
+            <div class="menu-grid">
+
+                <div class="menu-card reveal reveal-delay-1">
+                    <div class="card-img">
+                        <img src="images/tonkotsuRamen.jpg" style="width: 500px;" alt="Tonkotsu Ramen">
+                        <span class="card-badge">Terpopuler</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tonkotsu Ramen</h3>
+                        <p class="card-desc">Kuah babi putih pekat direbus 20 jam, chashu melt-in-the-mouth, telur ramen, nori, dan daun bawang hijau.</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 75.000</span>
+                            <span class="card-order">Pesan Sekarang -></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-delay-2">
+                    <div class="card-img">
+                        <img src="images/shoyuRamen.jpg" style="width: 500px;" alt="Shoyu Ramen">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Shoyu Ramen</h3>
+                        <p class="card-desc">Kuah kaldu ayam jernih berbumbu kecap Jepang tradisional, potongan ayam tender, menma, dan wakame.</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 68.000</span>
+                            <span class="card-order">Pesan Sekarang</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-delay-3">
+                    <div class="card-img">
+                        <img src="images/misoRamen.jpg" style="width: 500px;" alt="Miso Ramen">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Miso Ramen</h3>
+                        <p class="card-desc">Pasta miso pilihan Hokkaido dicampur kaldu ayam segar, jagung manis, mentega, dan bawang putih panggang.</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 72.000</span>
+                            <span class="card-order">Pesan Sekarang</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-delay-1">
+                    <div class="card-img">
+                        <img src="images/spicyRamen.jpg" style="width: 500px;" alt="Spicy Ramen">
+                        <span class="card-badge" style="background: #ff6b35;">🔥 Pedas</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Spicy Ramen</h3>
+                        <p class="card-desc">Kaldu tonkotsu dengan tambahan chili paste gochujang, topping kimchi, daging cincang, dan telur setengah matang.</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 78.000</span>
+                            <span class="card-order">Pesan Sekarang</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal reveal-delay-2">
+                    <div class="card-img">
+                        <img src="images/chickenRamen.jpg" style="width: 500px;" alt="Chicken Ramen">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Chicken Ramen</h3>
+                        <p class="card-desc">Kaldu ayam organik ringan namun kaya rasa, potongan ayam panggang, jamur shiitake, dan tare special.</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 65.000</span>
+                            <span class="card-order">Pesan Sekarang</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="menu-card reveal reveal-delay-3">
+                    <div class="card-img">
+                        <img src="images/deluxeRamen.jpg" style="width: 500px;" alt="Deluxe Ramen">
+                        <span class="card-badge" style="background: var(--gold); color: #1a1614;">Premium</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Deluxe Ramen Bowl</h3>
+                        <p class="card-desc">Kaldu tonkatsu double-rich, double-chashu, dua butir telur ramen, black garlic oil, dan truffle tare eksklusif</p>
+                        <div class="card-footer">
+                            <span class="card-price">Rp 120.000</span>
+                            <span class="card-order">Pesan Sekarang</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container">
+            <div class="features-header reveal">
+                <p class="section-label">Keunggulan Kami</p>
+                <h2 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.4rem);">Mengapa Kami Berbeda</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="features-grid">
+                <div class="features-card reveal reveal-delay-1">
+                    <span class="feature-icon">🍲</span>
+                    <h3 class="feature-title">Kaldu Direbus Berjam-jam</h3>
+                    <p class="feature-desc">Kuah kami direbus selama 20 jam tanpa henti menggunakan tulang segar pilihan untuk menghasilkan kaldu yang pekat, kaya, dan dalam rasanya.</p>
+                </div>
+                <div class="features-card reveal reveal-delay-2">
+                    <span class="feature-icon">🌾</span>
+                    <h3 class="feature-title">Mie Ramen Handmade</h3>
+                    <p class="feature-desc">Setiap helai mie dibuat dengan tangan setiap pagi dari tepung terigu premium, menghasilkan tekstur yang kenyal dan elastis sempurna.</p>
+                </div>
+                <div class="features-card reveal reveal-delay-3">
+                    <span class="feature-icon"🌿></span>
+                    <h3 class="feature-title">Bahan Segar Setiap Hari</h3>
+                    <p class="feature-desc">Kami hanya menggunakan bahan-bahan segar berkualitas tinggi yang dipersiapkan setiap hari demi menjaga citra rasa yang konsisten.</p>
+                </div>
+                <div class="features-card reveal reveal-delay-4">
+                    <span class="feature-icon">👨‍🍳</span>
+                    <h3 class="feature-title">Chef Ramen Berpengalaman</h3>
+                    <p class="feature-desc">Tim chef kami telah terlatih langsung di Tokyo dan memiliki pengalaman bertahun-tahun dalam seni memasak ramen autentik Jepang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <div class="gallery-header reveal">
+                <p class="section-label">Galeri</p>
+                <h2 class="section-title" style="font-size: clamp(1.8rem,3vw,2.4rem);">Sekilas Pandang</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery-grid reveal reveal-delay-1">
+                <div class="gallery-item">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=900&q=80" alt="Ramen Bowl Steaming">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=600&q=80" alt="Chef Cooking">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80" alt="Restaurant Ambience">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=900&q=80" alt="Ramen Close Up">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=600&q=80" alt="Spicy Ramen">
+                        <div class="gallery-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="testi-header reveal">
+                <p class="section-label">Testimoni</p>
+                <h2 class="section-title" style="color: #fff; font-size: clamp(1.8rem,3vw,2.4rem);">Kata Mereka</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card reveal reveal-delay-1">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"Tonkotsu ramen-nya luar biasa! Kuahnya benar-benar kaya dan gurih, saya tidak menyangka bisa menemukan ramen seautentik ini di Jakarta. Pasti akan kembali lagi!"</p>
+                    <div class="test-author">
+                        <div class="testi-avatar">A</div>
+                        <div>
+                            <div class="author-name">John Doe</div>
+                            <div class="author-tag">Food Blogger - Jakarta</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal reveal-delay-2">
+                    <div class="testi-stars">★★★★</div>
+                    <p class="testi-text">"Mie handmade-nya benar-benar berbeda dari ramen biasa. Teksturnya sempurna, tidak terlalu lembek dan tidak terlalu keras"</p>
+                    <div class="test-author">
+                        <div class="testi-avatar" style="background: #c9a84c;">B</div>
+                        <div>
+                            <div class="author-name">John Die</div>
+                            <div class="author-tag">Pelanggan Setia - Tangerang</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal reveal-delay-3">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"Suasana restorannya nyaman dan hangat, Pelayanannya ramah, makanannya enak, dan harganya sangat worth it. Tokyo Ramen House sudah jadi favorit keluarga kami!"</p>
+                    <div class="test-author">
+                        <div class="testi-avatar" style="background: #2a7a5e">C</div>
+                        <div>
+                            <div class="author-name">John Due</div>
+                            <div class="author-tag">Ibu Rumah Tangga - Bogor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info reveal">
+                    <p class="section-label">Kunjungi Kami</p>
+                    <h2 class="section-title">Lokasi &amp; <br>Reservasi</h2>
+                    <div class="divider"></div>
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <div class="info-label">Alamat</div>
+                                <div class="info-text">Jl. Ramen Autentik No. 88<br>Tangerang Selatan, Banten 15310 <br>Indonesia</div>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">🕐</div>
+                            <div>
+                                <div class="info-label">Jam Operasional</div>
+                                <div class="info-text">Senin - Jumat: 11.00 - 22.00 WIB <br>Sabtu - Minggu: 10:00 - 23:00 WIB</div>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <div class="info-label">Kontak</div>
+                                <div class="info-text">+62 123 456 789 <br> tokyoRamenHouse@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="tel: +62123456789" class="btn btn-primary" style="margin-top: 8px;">
+                         📞 Hubungi Kami
+                    </a>
+                </div>
+                <div class="map-placeholder reveal reveal-delay-2">
+                    <div class="map-img">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="Map" style="object-position: center; opacity: 0.35;">
+                        <div class="map-pin">
+                            <div class="map-pin-dot"></div>
+                        </div>
+                    </div>
+                    <div class="map-bottom">
+                        <span class="map-addr">📍 Tangerang Selatan, Banten</span>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.82rem; ">
+                            Buka Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section id="cta">
+        <div class="cta-bg-text">ラーメン</div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <p class="cta-eyebrow">Jangan Lewatkan</p>
+                <h2 class="cta-title">Semangkok Ramen <span>Hangat</span><br>Menanti Anda!</h2>
+                <p class="cta-sub">
+                    Rasakan pengalaman ramen autentik Jepang yang sesungguhnya. Setiap suapan membawa Anda langsung ke sudut-sudut warung ramen Tokyo yang ikonik.
+                </p>
+                <a href="#location" class="btn btn-primary cta-btn">Reservasi Sekarang 🍜</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <span class="nav-logo-en">Tokyo Ramen House</span>
+                        <span class="nav-logo-jp">東京ラーメンハウス</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Menghadirkan cita rasa ramen autentik Jepang dengan kuah kaldu yang kaya, 
+                        mie handmade segar, dan pengalaman makan yang tak terlupakan.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu Unggulan</h4>
+                    <ul>
+                        <li><span>Tonkotsu Ramen</span></li>
+                        <li><span>Shoyu Ramen</span></li>
+                        <li><span>Miso Ramen</span></li>
+                        <li><span>Spicy Ramen</span></li>
+                        <li><span>Deluxe Ramen Bowl</span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Informasi</h4>
+                    <ul>
+                        <li><span>📍 Jl. Ramen Autentik No 88, Tangerang Selatan</span></li>
+                        <li><span>📞 +62 123 456 789</span></li>
+                        <li><span>✉️ tokyoRamenHouse@gmail.com</span></li>
+                        <li><span>⏰ Senin - Jumat: 11-22</span></li>
+                        <li><span>⏰ Sabtu - Minggu: 10-23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    © 2026 <span>Tokyo Ramen House</span>. All rights reserved. Made With Tama
+                </p>
+                <p class="footer-copy">東京ラーメンハウス - Authentic Japanese</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
