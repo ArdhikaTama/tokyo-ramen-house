@@ -885,3 +885,261 @@ section {
   color: #fff;
 }
 
+#testimonials .divider {
+  background: var(--gold);
+}
+
+.testi-header{
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.testi-header .divider{
+  margin: 18px auto;
+}
+
+.testi-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testi-card{
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.testi-card:hover{
+  transform: translateY(-4px);
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+.testi-stars{
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.testi-text{
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 24px;
+  font-family: var(--font-body);
+}
+
+.testi-author{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testi-avatar{
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.author-name{
+  color: #fff;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.author-tag{
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 2px;
+}
+
+/* Location */
+#location{
+  background: var(--cream);
+  padding: 100px 0;
+}
+
+.location-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.location-info .section-title{
+  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+  color: var(--charcoal);
+}
+
+.info-blocks{
+  margin-top: 36px;
+}
+
+.info-block{
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(26, 22, 20, 0.1);
+}
+
+.info-block:last-child{
+  border-bottom: none;
+}
+
+.info-icon{
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  width: 32px;
+  margin-top: 2px;
+}
+
+.info-label{
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+.info-text{
+  font-size: 0.92em;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.map-placeholder{
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.map-img{
+  height: 360px;
+  background: linear-gradient(135deg, #e8dcc8, #c8b89a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-img img{
+  height: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+}
+
+.map-pin{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.map-pin-dot{
+  width: 20px;
+  height: 20px;
+  background: var(--red);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(192, 57, 43, 0.25);
+  animation: ping 2s ease infinite;
+}
+
+@keyframes ping{
+  0%, 100%{
+    box-shadow: 0 0 0 6px rgba(192, 57, 43, 0.25);
+  }
+  50%{
+    box-shadow: 0 0 0 14px rgba(192, 57, 43, 0.1);
+  }
+}
+
+.map-bottom{
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map-addr{
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* CTA Section */
+#cta{
+  background: var(--charcoal);
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cta-bg-text{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  font-family: var(--font-display);
+  font-size: 20vw;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.02);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.cta-content{
+  position: relative;
+  z-index: 2;
+}
+
+.cta-eyebrow{
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.cta-title{
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.cta-title span{
+  color: var(--red);
+}
+
+.cta-sub{
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 480px;
+  margin: 0 auto 40px;
+  line-height: 1.75;
+}
+
+.cta-btn{
+  padding: 18px 52px;
+  font-size: 1rem;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
